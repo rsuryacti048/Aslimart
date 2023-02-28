@@ -187,7 +187,20 @@
             <div class="copy">© 2023 SIPBharat Technologies</div>
         </a>
     </footer>
-    <script src="script.js"></script>
+        <script>
+    const faqs = document.querySelectorAll(".faq");
+
+        faqs.forEach(faq => {
+            faq.addEventListener("click", () => {
+                faqs.forEach(item => {
+                    if (item !== faq) {
+                        item.classList.remove("active");
+                    }
+                })
+                faq.classList.toggle("active");
+            })
+        })
+        </script>
 </body>
 
 </html>
