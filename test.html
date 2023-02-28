@@ -1,0 +1,95 @@
+<form>
+  <h3>Aslimart</h3>
+  <label for="select-option"></label>
+  <div class="dropdown">
+    <select id="select-option" name="select-option">
+      <option value="">Brand</option>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select>
+    </div>
+    <div class="dropdown">
+      <select id="select-option" name="select-option">
+        <option value="">Price</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+      </select>
+      </div>
+      <div class="dropdown">
+        <select id="select-option" name="select-option">
+          <option value="">Colour</option>
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+        </select>
+        </div><div class="dropdown">
+          <select id="select-option" name="select-option">
+            <option class="n1" value="">Size</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+          </div>
+
+      
+  </div>
+  <input type="submit" value="Submit">
+</form>
+<style>
+
+form {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+label {
+  margin-top: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown select {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+  margin: 5px;
+ 
+}
+
+.dropdown-arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #333;
+}
+
+.dropdown select:focus {
+  outline: none;
+}
+
+.dropdown select option:first-child {
+  display: none;
+}
+
+input[type="submit"] {
+  /* margin-top: 10px; */
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+</style>
